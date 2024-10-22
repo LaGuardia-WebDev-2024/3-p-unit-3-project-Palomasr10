@@ -1,224 +1,314 @@
 <!--
 Requirements
 [  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[Yes]Table
+[Yes] Three CSS Rules
+[Yes] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a :hover feature
-[ no ] Feature 2 - Include at least two Internal links
+[ Yes ] Feature 2 - Include at least two Internal links
 [ no ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        color: rgb(107, 199, 195);
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-    
-    table, th, td { border: 1px solid;}
-    
-    img {float: right;}
-    
-    background {color: rgb(238, 238, 238);}
-    
-    h1 {color: rgb(59, 30, 84);}
-    
-    td {color: rgb(226, 187, 233);}
-    
-    h2 {color: rgb(90, 99, 156);}
-    
-    ul {color: rgb(119, 118, 179);}
-    
-    p {color: rgb(155, 134, 189);}
-    
-  </style>
-</head>
+      img {
+        float: right;
+        border: 5px solid rgb(107, 199, 195);
+      }
 
-<body>
+      body {
+        background-color: rgb(246, 238, 199);
+        width: 60%;
+        margin: auto
+      }
 
-  <h1>Paloma's Summer Dinner Recipe Book</h1>
+      h1 {
+        color: rgb(254, 187, 204);
+        text-align: center
+      }
 
-  <h2>Contents:</h2>
+      tr {
+        color: rgb(107, 199, 195);
+      }
 
-  <ol>
-    <li><a href="#pina">Recipe #1: Pina Coladas</a></li>
-    <li><a href="#Empanadas">Recipe #2: Empanadas Under the Sea</a></li>
-    <li><a href="#chocolate">Recipe #3: Famous Chocolate Cake </a> </li>
-  </ol>
+      td {
+        color: rgb(107, 199, 195);
+      }
 
-  <h2 id="pina">Recipe #1: Pina Coladas</h2>
+      h2 {
+        color: rgb(58, 166, 185);
+      }
 
-  <ul>
-    <li>Time: 10 Minutes</li>
-    <li>Serves: 2-3</li>
-  </ul>
+      ul {
+        color: rgb(255, 158, 170);
+      }
 
-  <img src="https://www.thespruceeats.com/thmb/LI3MXdfPpSL1UbOrcMOXek0u49o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/frozen-pina-colada-recipe-759297-Hero-1-c53f5c55f6b14b3e8fea901076e4b130.jpg" width="200">
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ice</td>
-        <td>1/4 Cup</td>
-      </tr>
-      <tr>
-      <td>Unsweetened Pineapple Juice</td>
-        <td>3/4 Cup</td>
-      </tr>
-      <tr>
-      <td>Unsweetened Coconut Milk</td>
-        <td>3/4 Cup</td>
-      </tr>
-      <tr>
-      <td>Marachino Cherries</td>
-        <td>1-2</td>
-      </tr>
-    </tbody>
-  </table>
+      p {
+        color: rgb(255, 158, 170);
+      }
 
-  <p><strong>Step 1:</strong> Gather contents and put pineapple juice and coconut milk in the blender and blend for about 5-10 seconds until fully blended<br>
-    <strong>Step 2:</strong> Add in ice and blend until fully mixed and for additional time depending on desired thickness of the drink<br>
-    <strong>Step 3:</strong> Pour into glasses and garnish with a marachino cherry and enjoy!
-  </p>
+      .links {
+        color: rgb(255, 158, 170);
+      }
+      
+      .links: hover{background-color: rgb();}
+    </style>
+  </head>
 
-  <p><em>Source: <a href="https://www.thespruceeats.com/virgin-pina-colada-recipe-2097115#">the Spruce Eats</a></em></p>
-  
-  <h2 id="Empanadas">Recipe #2: Empanadas Under the Sea</h2>
-  
-   <ul>
-    <li>Time: 2 Hours</li>
-    <li>Serves: 2-3</li>
-  </ul>
+  <body>
+    <h1>Paloma's Summer Dinner Recipe Book</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Flour</td>
-        <td>3 Cups</td>
-      </tr>
-      <tr>
-      <td>Butter</td>
-        <td>1 Stick</td>
-      </tr>
-      <tr>
-      <td>Kosher Salt</td>
-        <td>1/3 Teaspoon</td>
-      </tr>
-      <tr>
-      <td>Olive Oil</td>
-        <td>2 Tablespoons</td>
-      </tr>
-      <tr>
-      <td>Shrimp</td>
-        <td>10-15</td>
-      </tr>
-      <tr>
-      <td>Chorizo Sausage</td>
-        <td>1 Link</td>
+    <h2>Contents:</h2>
+
+    <ol>
+      <li class="links">
+        <a href="#pina" class="links">Recipe #1: Pina Coladas</a>
+      </li>
+      <li class="links">
+        <a href="#Empanadas" class="links"
+          >Recipe #2: Empanadas Under the Sea</a
+        >
+      </li>
+      <li class="links">
+        <a href="#chocolate" class="links">Recipe #3: Famous Chocolate Cake </a>
+      </li>
+    </ol>
+
+    <h2 id="pina">Recipe #1: Pina Coladas</h2>
+
+    <ul>
+      <li>Time: 10 Minutes</li>
+      <li>Serves: 2-3</li>
+    </ul>
+
+    <img
+      src="https://www.thespruceeats.com/thmb/LI3MXdfPpSL1UbOrcMOXek0u49o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/frozen-pina-colada-recipe-759297-Hero-1-c53f5c55f6b14b3e8fea901076e4b130.jpg"
+      width="200"
+    />
+
+    <table>
+      <thead>
         <tr>
-      <td>Poblano Pepper</td>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ice</td>
+          <td>1/4 Cup</td>
+        </tr>
+        <tr>
+          <td>Unsweetened Pineapple Juice</td>
+          <td>3/4 Cup</td>
+        </tr>
+        <tr>
+          <td>Unsweetened Coconut Milk</td>
+          <td>3/4 Cup</td>
+        </tr>
+        <tr>
+          <td>Marachino Cherries</td>
+          <td>1-2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>Step 1:</strong> Gather contents and put pineapple juice and
+      coconut milk in the blender and blend for about 5-10 seconds until fully
+      blended<br />
+      <strong>Step 2:</strong> Add in ice and blend until fully mixed and for
+      additional time depending on desired thickness of the drink<br />
+      <strong>Step 3:</strong> Pour into glasses and garnish with a marachino
+      cherry and enjoy!
+    </p>
+
+    <p>
+      <em
+        >Source:
+        <a
+          href="https://www.thespruceeats.com/virgin-pina-colada-recipe-2097115#"
+          class="links"
+          >the Spruce Eats</a
+        ></em
+      >
+    </p>
+
+    <h2 id="Empanadas">Recipe #2: Empanadas Under the Sea</h2>
+
+    <ul>
+      <li>Time: 2 Hours</li>
+      <li>Serves: 2-3</li>
+    </ul>
+
+    <img
+      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Cake%202.jpg?v=1729614273121"
+      width="200"
+    />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flour</td>
+          <td>3 Cups</td>
+        </tr>
+        <tr>
+          <td>Butter</td>
+          <td>1 Stick</td>
+        </tr>
+        <tr>
+          <td>Kosher Salt</td>
+          <td>1/3 Teaspoon</td>
+        </tr>
+        <tr>
+          <td>Olive Oil</td>
+          <td>2 Tablespoons</td>
+        </tr>
+        <tr>
+          <td>Shrimp</td>
+          <td>10-15</td>
+        </tr>
+        <tr>
+          <td>Chorizo Sausage</td>
+          <td>1 Link</td>
+        </tr>
+        <tr>
+          <td>Poblano Pepper</td>
           <td>2</td>
-      </tr>
-      <tr>
-      <td>Corn</td>
-        <td>1 Ear</td>
-      </tr>
-      <tr>
-      <td>Egg</td>
-        <td>1</td>
-      </tr>
-      <tr>
-      <td>Food Coloring</td>
-        <td>1-2 Drops</td>
-      </tr>
-    </tr>
-  </tbody>
-  </table>
+        </tr>
+        <tr>
+          <td>Corn</td>
+          <td>1 Ear</td>
+        </tr>
+        <tr>
+          <td>Egg</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Food Coloring</td>
+          <td>1-2 Drops</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <p><strong>Step 1:</strong> Sift flour and seperate into 3 seperate bowls with 1 cup of flour in each<br>
-    <strong>Step 2:</strong> Melt butter and then add the olive oil and mix well<br>
-    <strong>Step 3:</strong> Divide butter and oil mixture evenly, and mix with bowls of flour seperately and using your hands, then add different colors of food coloring to each bowl<br>
-    <strong>Step 4:</strong> Refrigerate dough for 30 minutes<br>
-    <srong>Step 5:</srong> While the dough refrigerates, begin the filling by cooking the corn, cooking the chorizo, roasting the poblano peppers and cutting the shrimp (keep the ends with the tail)<br>
-    <strong>Step 6:</strong> Peel the skin off of the peppers and cut up, then mix all contents together in a bowl<br>
-    <strong>Step 6:</strong> Take small parts of each color dough, form into cylinders, line up together and twist; after twisting roll into a ball then using a rolling pin make flat tortillas; repeat until there is only a little of each color dough left<br>
-    <strong>Step 7:</strong> Put tails so that they slight stick out of one of the side of the tortilla, then fill and fold over into a semi-circle using a fork to bind the two sides together on the edges; repeat until all tortillas are filled<br>
-    <strong>Step 7:</strong> Use leftover dough to create fish scales and eyes and add on top of empanadas<br>
-    <strong>Step 8:</strong> Coat in beaten egg on top of empanada<br>
-    <strong>Step 9:</strong> Put in the oven at 425 degrees for 20 minutes<br>
-    <strong>Step 10:</strong> Let them cool off and enjoy!
-  </p>
+    <p>
+      <strong>Step 1:</strong> Sift flour and seperate into 3 seperate bowls
+      with 1 cup of flour in each<br />
+      <strong>Step 2:</strong> Melt butter and then add the olive oil and mix
+      well<br />
+      <strong>Step 3:</strong> Divide butter and oil mixture evenly, and mix
+      with bowls of flour seperately and using your hands, then add different
+      colors of food coloring to each bowl<br />
+      <strong>Step 4:</strong> Refrigerate dough for 30 minutes<br />
+      <srong>Step 5:</srong> While the dough refrigerates, begin the filling by
+      cooking the corn, cooking the chorizo, roasting the poblano peppers and
+      cutting the shrimp (keep the ends with the tail)<br />
+      <strong>Step 6:</strong> Peel the skin off of the peppers and cut up, then
+      mix all contents together in a bowl<br />
+      <strong>Step 6:</strong> Take small parts of each color dough, form into
+      cylinders, line up together and twist; after twisting roll into a ball
+      then using a rolling pin make flat tortillas; repeat until there is only a
+      little of each color dough left<br />
+      <strong>Step 7:</strong> Put tails so that they slight stick out of one of
+      the side of the tortilla, then fill and fold over into a semi-circle using
+      a fork to bind the two sides together on the edges; repeat until all
+      tortillas are filled<br />
+      <strong>Step 7:</strong> Use leftover dough to create fish scales and eyes
+      and add on top of empanadas<br />
+      <strong>Step 8:</strong> Coat in beaten egg on top of empanada<br />
+      <strong>Step 9:</strong> Put in the oven at 425 degrees for 20 minutes<br />
+      <strong>Step 10:</strong> Let them cool off and enjoy!
+    </p>
 
- 
-  
-  <h2 id="chocolate">Recipe #3: Famous Chocolate Cake</h2>
+    <h2 id="chocolate">Recipe #3: Famous Chocolate Cake</h2>
 
-<ul>
-    <li>Time: 10 Minutes</li>
-    <li>Serves: 2-3</li>
-  </ul>
+    <ul>
+      <li>Time: 10 Minutes</li>
+      <li>Serves: 2-3</li>
+    </ul>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Betty Crocker Super Moist Cake Mix</td>
-        <td>1 Box</td>
-      </tr>
-      <tr>
-      <td>Water</td>
-        <td>1 Cup</td>
-      </tr>
-      <tr>
-      <td>Vegetable Oil</td>
-        <td>1/2 Cup</td>
-      </tr>
-      <tr>
-      <td>Eggs</td>
-        <td>3</td>
-      </tr>
-      <tr>
-      <td>Betty Crocker Chocolate Cake Frosting</td>\
-        <td>1 Box</td>
-      </tr>
-      <tr>
-      <td>Rainbow Sprinkles</td>
-        <td>1 Bottle</td>
-      </tr>
-    </tbody>
-  </table>
+    <img
+      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Empanadas.jpeg?v=1729614073464"
+      width="200"
+    />
 
-  <p><strong>Step 1:</strong> Preheat Oven to 325 degrees and butter pan<br>
-    <strong>Step 2:</strong> Mix all ingredients together, and pour into the pan<br>
-    <strong>Step 3:</strong> Bake for about 25 minutes then begin using toothpicks to determine the rest of the bake time<br>
-    <strong>Step 4:</strong> Let it cool for about 10 minutes then frost all over the outside<br>
-    <strong>Step 5:</strong> Cover in sprinkles so that it is completely masked, then serve and enjoy!
-  </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Betty Crocker Super Moist Cake Mix</td>
+          <td>1 Box</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>1 Cup</td>
+        </tr>
+        <tr>
+          <td>Vegetable Oil</td>
+          <td>1/2 Cup</td>
+        </tr>
+        <tr>
+          <td>Eggs</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Betty Crocker Chocolate Cake Frosting</td>
+          
+          <td>1 Box</td>
+        </tr>
+        <tr>
+          <td>Rainbow Sprinkles</td>
+          <td>1 Bottle</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <p><em>Source: <a href="https://www.bettycrocker.com/products/betty-crocker-baking-and-cake-mixes/chocolate-fudge">Betty Crocker</a></em></p>
-  
-</body>
+    <p>
+      <strong>Step 1:</strong> Preheat Oven to 325 degrees and butter pan<br />
+      <strong>Step 2:</strong> Mix all ingredients together, and pour into the
+      pan<br />
+      <strong>Step 3:</strong> Bake for about 25 minutes then begin using
+      toothpicks to determine the rest of the bake time<br />
+      <strong>Step 4:</strong> Let it cool for about 10 minutes then frost all
+      over the outside<br />
+      <strong>Step 5:</strong> Cover in sprinkles so that it is completely
+      masked, then serve and enjoy!
+    </p>
 
+    <p>
+      <em
+        >Source:
+        <a
+          href="https://www.bettycrocker.com/products/betty-crocker-baking-and-cake-mixes/chocolate-fudge"
+          class="links"
+          >Betty Crocker</a
+        ></em
+      >
+    </p>
+  </body>
 </html>
