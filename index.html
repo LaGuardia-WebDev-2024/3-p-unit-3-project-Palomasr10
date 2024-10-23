@@ -1,12 +1,12 @@
 <!--
 Requirements
-[  ] Two External Links
+[Yes] Two External Links
 [Yes]Table
 [Yes] Three CSS Rules
 [Yes] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a :hover feature
+[ Yes ] Feature 1 - Include a :hover feature
 [ Yes ] Feature 2 - Include at least two Internal links
 [ no ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
@@ -33,12 +33,12 @@ Select ONE Additional Feature to Add
       body {
         background-color: rgb(246, 238, 199);
         width: 60%;
-        margin: auto
+        margin: auto;
       }
 
       h1 {
         color: rgb(254, 187, 204);
-        text-align: center
+        text-align: center;
       }
 
       tr {
@@ -64,8 +64,16 @@ Select ONE Additional Feature to Add
       .links {
         color: rgb(255, 158, 170);
       }
+
+      mark:hover {
+        background-color: rgb(160, 222, 255);
+      }
+
+      mark {
+        background-color: rgb(246, 238, 199);
+        color: rgb(255, 158, 170);
+      }
       
-      .links: hover{background-color: rgb();}
     </style>
   </head>
 
@@ -76,15 +84,17 @@ Select ONE Additional Feature to Add
 
     <ol>
       <li class="links">
-        <a href="#pina" class="links">Recipe #1: Pina Coladas</a>
+        <a href="#pina" class="links"><mark>Recipe #1: Pina Coladas</mark></a>
       </li>
       <li class="links">
         <a href="#Empanadas" class="links"
-          >Recipe #2: Empanadas Under the Sea</a
+          ><mark>Recipe #2: Empanadas Under the Sea</mark></a
         >
       </li>
       <li class="links">
-        <a href="#chocolate" class="links">Recipe #3: Famous Chocolate Cake </a>
+        <a href="#chocolate" class="links"
+          ><mark>Recipe #3: Famous Chocolate Cake</mark></a
+        >
       </li>
     </ol>
 
@@ -143,7 +153,7 @@ Select ONE Additional Feature to Add
         <a
           href="https://www.thespruceeats.com/virgin-pina-colada-recipe-2097115#"
           class="links"
-          >the Spruce Eats</a
+          ><mark>the Spruce Eats</mark></a
         ></em
       >
     </p>
@@ -156,7 +166,7 @@ Select ONE Additional Feature to Add
     </ul>
 
     <img
-      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Cake%202.jpg?v=1729614273121"
+      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Empanadas.jpeg?v=1729614073464"
       width="200"
     />
 
@@ -248,7 +258,7 @@ Select ONE Additional Feature to Add
     </ul>
 
     <img
-      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Empanadas.jpeg?v=1729614073464"
+      src="https://cdn.glitch.global/a0ed0b23-9152-44f5-a193-ca558ddedd6f/Cake%202.jpg?v=1729614273121"
       width="200"
     />
 
@@ -278,7 +288,7 @@ Select ONE Additional Feature to Add
         </tr>
         <tr>
           <td>Betty Crocker Chocolate Cake Frosting</td>
-          
+
           <td>1 Box</td>
         </tr>
         <tr>
@@ -306,7 +316,7 @@ Select ONE Additional Feature to Add
         <a
           href="https://www.bettycrocker.com/products/betty-crocker-baking-and-cake-mixes/chocolate-fudge"
           class="links"
-          >Betty Crocker</a
+          ><mark>Betty Crocker</mark></a
         ></em
       >
     </p>
